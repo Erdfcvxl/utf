@@ -1,7 +1,15 @@
+<script src="app.module.ts"></script>
+
+<input type="file" (change)="handleFileUpload($event)">
+
+<a id="download">newFile</a>
+
+<hr>
+
 <input type="text" [(ngModel)]="decimal.input" (keyup)="handleDecimalChange()" placeholder="DECIMAL">
 <div>HEX: {{ decimal.hex }}</div>
 <div>Binary: {{ decimal.binary }}</div>
-<div>ACII: {{ decimal.acii }}</div>
+<div>UTF: {{ decimal.acii }}</div>
 
 <hr>
 
@@ -9,6 +17,6 @@
 <input type="text" [(ngModel)]="heximal.input" (keyup)="handleHexChange()" placeholder="HEXIMAL">
 <div>Decimal: {{ heximal.decimal }}</div>
 <div>Binary: {{ heximal.binary }}</div>
-<div>ACII: {{ heximal.acii }}</div>
+<div>UTF: {{ heximal.acii }}</div>
 
 <hr>
